@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js" type="text/javascript">
+	</script> 
+	<link href="css/video-js.css" rel="stylesheet">
+	<script src="js/video.js"></script>
+	<link rel="stylesheet" href="css/estilo.css" media="all">
+</head>
+<body>
+	
+	<div class="content" id="mediaz_media">
+		<div id="position-inter">
+			<h2 class="titulo"> Título do Vídeo </h2>	
+			<a class="interruptor" href="#">Apagar as Luzes</a>
+		</div>
+			<script>
+				$(document).ready(function(){
+					$('#mascara').css('height', $(document).height()).hide();
+						$('.interruptor').click(function(e) {
+							e.preventDefault();
+							$('#mascara').toggle();
+								if ($('#mascara').is(':hidden')) {
+									$(this).html('Apagar as Luzes').removeClass('apaga-acende');
+								} else {
+									$(this).html('Acender as Luzes').addClass('apaga-acende');
+							}
+						});
+				        
+				});
+			</script>
+		
+		
+		<div id="video">		
+			<!-- <object width="512" height="462" align="middle">
+				<param name="movie" value="http://www.youtube.com/v/gsSmtvzegAQ&hl=pt-br&fs=1&"></param>
+				<param name="allowFullScreen" value="true"></param>
+				<param name="allowscriptaccess" value="always">
+				</param>
+				<embed src="http://www.youtube.com/v/gsSmtvzegAQ&hl=pt-br&fs=1&" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="512" height="462"></embed>
+			</object> -->
+				
+			<video id="example_video_1" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="auto" width="512" height="288"
+				  poster="http://video-js.zencoder.com/oceans-clip.png"
+				  data-setup='{}'>
+				 <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
+				 
+				 <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+			</video>
+		
+		</div>	
+		
+
+		<div id="mascara"></div>
+
+		<div class="hits_aval">
+			<img title="cliques" alt="cliques" src="img/vid_ico.gif">
+			<b>138</b>
+			cliques: 
+			<img title="Avaliação: " alt="Avaliação: " src="img/v_star_pq_on.gif">
+			<img title="Avaliação: " alt="Avaliação: " src="img/v_star_pq_on.gif">
+			<img title="Avaliação: " alt="Avaliação: " src="img/v_star_pq_on.gif">
+			<img title="Avaliação: " alt="Avaliação: " src="img/v_star_pq_on.gif">
+			<img title="Avaliação: " alt="Avaliação: " src="img/v_star_pq_on.gif">
+			<div id="mz_avaliacao6219" class="aval">
+				<b>Avalie você também:</b>
+				
+				<a id="a_mz__av1" href="#1">
+					<img src="img/star_off.gif" alt="Avaliacao: 1">
+				</a>
+				<a id="a_mz__av2" href="#1">
+					<img src="img/star_off.gif" alt="Avaliacao: 2">
+				</a>
+				<a id="a_mz__av3" href="#1">
+					<img src="img/star_off.gif" alt="Avaliacao: 3">
+				</a>
+				<a id="a_mz__av4" href="#1">
+					<img src="img/star_off.gif" alt="Avaliacao: 4">
+				</a>
+				<a id="a_mz__av5" href="#1">
+					<img src="img/star_off.gif" alt="Avaliacao: 5">
+				</a>
+			</div>
+			<div class="next-video">
+				<b>Vídeo 1 de 3</b>
+				<a id="prox-video" href="#1">
+					<img src="img/play-arrow-next.gif" alt="">
+				</a>
+			</div>
+			
+		</div>
+		<div class="redes-sociais url_incor">
+			
+			<ul>
+				<span>Compartilhar:</span>
+				<a href="#" alt="" target="_blank">
+					<li class="sprite twitter"></li>
+				</a>
+				<a href="#" alt="" target="_blank">
+					<li class="sprite facebook"></li>
+				</a>
+				<a href="#" alt="" target="_blank">
+					<li class="sprite google-plus"></li>
+				</a>
+				<a href="#" alt="">
+					<li class="sprite contato-email"></li>
+					<span>Enviar por e-mail</span>
+				</a>
+				<a href="#" alt="">
+					<li class="sprite favoritos"></li>
+					<span>Adicionar aos Favoritos</span>
+				</a>
+			</ul>
+
+			<div class="spacer"></div>
+			<span>URL:</span>
+			<input id="urlInput" type="text" value="">
+			
+			<span>Incorporar:</span>
+			<input id="incorporarInput" type="text" value="">	
+		</div>
+		<div class="descricao">
+			<h3>Descrição</h3>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel finibus diam. Aenean sed pellentesque dui, non congue lectus. Morbi vel turpis molestie, ornare dui eu, finibus velit. Ut vel orci sed magna semper rutrum a id est. Vestibulum suscipit venenatis ante non bibendum. Aenean quis congue nisl. <br><br>
+				Vivamus commodo felis vitae gravida molestie. Nunc dolor dolor, pellentesque finibus pretium non, tempor ac sem. Sed lorem leo, auctor ac est et, semper viverra augue. Nulla vestibulum tempor nibh, ut maximus tellus. Mauris imperdiet dapibus sapien semper euismod. Phasellus ornare vehicula quam sit amet fermentum. <br><br> 
+				Quisque efficitur sollicitudin nulla non vestibulum. Ut nisi libero, fringilla in nisi quis, dignissim vestibulum tortor. Suspendisse vitae dui ornare, placerat massa in, varius ex. 	
+			</p>
+		</div>
+	
+	</div><!--/content-->	
+</body>
+</html>
